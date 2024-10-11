@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { selectAllPosts } from './postSlice'
 
 export const PostsList = () => {
-  // Select the `state.posts` value from the store into the component
   const posts = useAppSelector(selectAllPosts)
 
   const renderedPosts = posts.map((post) => (
